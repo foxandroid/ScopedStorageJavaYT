@@ -100,7 +100,8 @@ public class MainActivity extends AppCompatActivity {
         binding.saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mGetImage.launch(new Intent(MediaStore.ACTION_IMAGE_CAPTURE));
+               // mGetImage.launch(new Intent(MediaStore.ACTION_IMAGE_CAPTURE));
+                startActivity(new Intent(MainActivity.this,ReadExternalStorage.class));
 
             }
         });
